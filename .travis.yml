@@ -1,13 +1,9 @@
 language: node_js
 node_js:
-  - "18"  # Specify the Node.js version you want to use
+  - "13"  # Specify the Node.js version you want to use
 
 services:
   - docker
-
-before_install:
-  - npm config set progress false || true
-  - npm install -g npm@latest
 
 # Pre-testing installs
 install:
